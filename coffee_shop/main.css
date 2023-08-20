@@ -9,9 +9,8 @@ html {
 }
 
 header,
-section h2
-section h3 {
-            font-family: 'Newsreader', serif;
+section h2 section h3 {
+  font-family: "Newsreader", serif;
 }
 
 body {
@@ -22,12 +21,14 @@ body {
 input,
 textarea,
 form button,
-p, h2,h3{
-  font-family: 'Cedarville Cursive', cursive;
+p,
+h2,
+h3 {
+  font-family: "Cedarville Cursive", cursive;
 }
 
 header {
-  padding: 16px 0;  
+  padding: 16px 0;
   background-color: #432616;
 }
 
@@ -68,12 +69,13 @@ section .container {
   margin-right: 8px;
 }
 
-section .container { /*FOI USADO PARA SUBSCREVER O ALIGN ITEMS CENTER*/
-    align-items: flex-start;
+/*FOI USADO PARA SUBSCREVER O ALIGN ITEMS CENTER*/
+section .container {
+  align-items: flex-start;
 }
 
 section {
-    padding: 24px 0;
+  padding: 24px 0;
 }
 
 section h2 {
@@ -81,24 +83,20 @@ section h2 {
 }
 
 section p {
-  margin-bottom: 8px;   
+  margin-bottom: 8px;
 }
 
 .store-inside {
   margin-right: 32px;
 }
 
-.store-inside {
-  margin-right 32px;
-}
-
 .social-links img {
-    height: 24px;
+  height: 24px;
 }
 
 .social-links li {
-    display: inline;
-    margin-right: 8px;
+  display: inline;
+  margin-right: 8px;
 }
 
 .social-links li a {
@@ -106,12 +104,12 @@ section p {
 }
 
 #contact .container {
-    display: block;
+  display: block;
 }
 
 .contact-methods {
-    display:flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 form input,
@@ -135,7 +133,7 @@ section h3 {
 }
 
 form button {
-  background-color:#432616 ;
+  background-color: #432616;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -150,55 +148,8 @@ textarea:focus {
   outline-color: #ce994f;
 }
 
-footer{
+footer {
   background-color: #432616;
   color: #fff;
   padding: 16px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
