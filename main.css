@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  background-color: rgb(168, 161, 161);
+  display: flex;
+  justify-content: center; /*centraliza elementos*/
+}
+
+h1 {
+  padding: 16px 0;
+  text-transform: uppercase;
+}
+
+input,
+button,
+ul {
+  padding: 10px 8px;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+
+li {
+  padding: 8px 0;
+  cursor: pointer;
+}
