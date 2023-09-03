@@ -5,5 +5,11 @@ function validaNumero() {
 
   if (valorB > valorA)
     alert(valorB + ' eh maior que ' + valorA + ' formulario VALIDO');
-  else alert(valorA + ' eh maior que ' + valorB + ' formulario INVALIDO');
+  else
+    alert(
+      valorA +
+        ' eh maior que ' +
+        valorB +
+        ' formulario INVALIDO tente novamente...'
+    );
 }

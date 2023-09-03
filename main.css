@@ -5,7 +5,7 @@
 }
 
 .container {
-  background-color: darkgrey;
+  background-color: rgb(156, 141, 141);
   display: flex;
   flex-direction: column;
   align-items: center;
