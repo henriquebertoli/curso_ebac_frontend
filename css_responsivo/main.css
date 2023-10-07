@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: black;
+}
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header li {
+  list-style: none;
+  display: inline;
+  margin-left: 16px;
+}
+
+li a {
+  text-decoration: none;
+}
+
+header {
+  background-color: darkgray;
+  padding: 16px;
+  margin-bottom: 56px;
+}
+
+section .container {
+  display: flex;
+  align-items: normal;
+  justify-content: space-between;
+}
+
+section .container img {
+  height: 360px;
+  width: 440px;
+  margin-right: 32px;
+}
+
+h2 {
+  margin-top: 12px;
+  border-bottom: solid #ccc;
+}
+
+section h2 {
+  margin-bottom: 16px;
+  font-style: italic;
+  padding: 8px;
+}
+
+.conteudo p {
+  padding-top: 12px;
+}
+
+.produto img {
+  max-width: 100%;
+}
+
+.produto p {
+  padding: 10px 0;
+}
+
+.lista_produtos {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 23%);
+  column-gap: 2%;
+  row-gap: 5%;
+}
+
+h3 {
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+button {
+  background-color: #ccc;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 640px) {
+  header .container {
+    max-width: 90%;
+    display: block;
+  }
+
+  .conteudo .container {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  h2 {
+    margin-top: 16px;
+  }
+
+  .container ul {
+    margin-top: 5px;
+  }
+
+  .container {
+    max-width: 95%;
+    flex-direction: column;
+  }
+
+  .container img {
+    max-width: 100%;
+  }
+
+  .lista_produtos {
+    display: block;
+  }
+
+  .produto h3,
+  img {
+    margin-top: 16px;
+    border-radius: 6px;
+  }
+
+  button {
+    margin: auto;
+    margin-bottom: 32px;
+    display: block;
+    color: black;
+    box-shadow: 3px 3px 3px inset white;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .global_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  section .products {
+    display: block;
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+}
