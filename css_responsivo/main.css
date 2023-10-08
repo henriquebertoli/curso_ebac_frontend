@@ -9,16 +9,21 @@
 body {
   background-color: black;
 }
+
 .container {
   max-width: 1024px;
   width: 100%;
-  margin: 0 auto;
+  margin: 5px auto;
+  border: 2px solid salmon;
 }
 
 header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: block;
+  /*display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;*/
+
 }
 
 header li {
@@ -38,15 +43,22 @@ header {
 }
 
 section .container {
-  display: flex;
-  align-items: normal;
-  justify-content: space-between;
+  display: block;
 }
 
-section .container img {
+section .container-about img {
   height: 360px;
   width: 440px;
   margin-right: 32px;
+}
+
+.container-about {
+  display: flex;
+  align-items: start;
+  max-width: 1024px;
+  width: 100%;
+  margin: 5px auto;
+  border: 2px solid salmon;
 }
 
 h2 {
@@ -93,31 +105,44 @@ button {
 }
 
 @media screen and (max-width: 640px) {
-  header .container {
-    max-width: 90%;
-    display: block;
-  }
-
-  .conteudo .container {
+  .global_container {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 10% 45% 45%;
+
+    grid-template-areas:
+      'header produto'
+      'sobre produto'
+      'sobre produto';
   }
 
   h2 {
     margin-top: 16px;
   }
 
+  header {
+    grid-area: header;
+  }
+
   .container ul {
     margin-top: 5px;
   }
 
-  .container {
+  .sobre {
+    grid-area: sobre;
+  }
+
+  .container-about {
     max-width: 95%;
     flex-direction: column;
   }
 
-  .container img {
+  .container-about img {
     max-width: 100%;
+  }
+
+  section .producto {
+    grid-area: produto;
   }
 
   .lista_produtos {
@@ -139,7 +164,7 @@ button {
   }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1023px) {
+/*@media screen and (min-width: 641px) and (max-width: 1023px) {
   .global_container {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -147,14 +172,14 @@ button {
   }
 
   .about {
-    display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    grid-column: 1/1;
+    grid-row: 2/3;
   }
 
-  section .products {
-    display: block;
-    grid-column: 2/3;
+  .products {
     grid-row: 1/3;
   }
 }
+*/

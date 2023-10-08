@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  max-width: 1024px;
+  width: 100%;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 10% 90%;
+}
+
+header {
+  background-color: brown;
+}
+
+.sobre {
+  background-color: cadetblue;
+  grid-row: 2/3;
+}
+
+.produto {
+  background-color: darkgrey;
+  grid-row: 1/3;
+}
