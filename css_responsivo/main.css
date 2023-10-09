@@ -18,12 +18,10 @@ body {
 }
 
 header .container {
-  display: block;
-  /*display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;*/
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header li {
@@ -104,15 +102,17 @@ button {
   border-radius: 6px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1023px) {
+  
   .global_container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 10% 45% 45%;
-
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10% 90%;
+/*O grid não esta alinhado da forma desejada
+ A seção SOBRE A LOJA, deveria estar abaixo do 
+ Header, como alinha corretamente?*/
     grid-template-areas:
       'header produto'
-      'sobre produto'
       'sobre produto';
   }
 
@@ -133,15 +133,16 @@ button {
   }
 
   .container-about {
-    max-width: 95%;
+    max-width: 90%;
     flex-direction: column;
+    grid-area: sobre;
   }
 
   .container-about img {
     max-width: 100%;
   }
 
-  section .producto {
+  section .produto {
     grid-area: produto;
   }
 
@@ -164,22 +165,33 @@ button {
   }
 }
 
-/*@media screen and (min-width: 641px) and (max-width: 1023px) {
+@media screen and (max-width: 640px) {
+
   .global_container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 10% 90%;
-  }
+  
+    display:block;
+    }
 
-  .about {
-    flex-direction: column;
-    flex-wrap: wrap;
-    grid-column: 1/1;
-    grid-row: 2/3;
-  }
+    .container {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+    }
 
-  .products {
-    grid-row: 1/3;
-  }
+    .container-about img {
+      width: 90%;
+      align-self:center; 
+      /*1-Como faço para que a foto ocupe-
+       todo o espaço do container?
+       2- O conteudo desse container e do header -
+       Vazam para fora em displays menores (558px)
+       Como evitar esse comportamento?*/
+
+    }
+
+    button {
+      width: 100%;
+      margin-top: 5px;
+    }
+
 }
-*/
