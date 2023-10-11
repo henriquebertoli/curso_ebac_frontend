@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -12,16 +12,14 @@ body {
 
 .container {
   max-width: 1024px;
-  width: 100%;
-  margin: 5px auto;
-  border: 2px solid salmon;
+  width: 90%;
+  margin: 0 auto;
 }
 
 header .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 
 header li {
@@ -40,13 +38,10 @@ header {
   margin-bottom: 56px;
 }
 
-section .container {
-  display: block;
-}
-
 section .container-about img {
   height: 360px;
-  width: 440px;
+  width: 100%;
+  object-fit: cover;
   margin-right: 32px;
 }
 
@@ -55,19 +50,18 @@ section .container-about img {
   align-items: start;
   max-width: 1024px;
   width: 100%;
-  margin: 5px auto;
-  border: 2px solid salmon;
+}
+
+h1 {
+  font-style: italic;
 }
 
 h2 {
-  margin-top: 12px;
-  border-bottom: solid #ccc;
-}
-
-section h2 {
   margin-bottom: 16px;
   font-style: italic;
   padding: 8px;
+  margin-top: 12px;
+  border-bottom: solid #ccc;
 }
 
 .conteudo p {
@@ -102,15 +96,12 @@ button {
   border-radius: 6px;
 }
 
-@media screen and (max-width: 1023px) {
-  
+@media (max-width: 1023px) {
   .global_container {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 10% 90%;
-/*O grid não esta alinhado da forma desejada
- A seção SOBRE A LOJA, deveria estar abaixo do 
- Header, como alinha corretamente?*/
+    grid-template-rows: auto auto;
+  
     grid-template-areas:
       'header produto'
       'sobre produto';
@@ -122,6 +113,7 @@ button {
 
   header {
     grid-area: header;
+    margin: 0;
   }
 
   .container ul {
@@ -133,21 +125,32 @@ button {
   }
 
   .container-about {
-    max-width: 90%;
+    max-width: 100%;
     flex-direction: column;
-    grid-area: sobre;
+    padding: 28px;
   }
 
   .container-about img {
     max-width: 100%;
   }
 
-  section .produto {
-    grid-area: produto;
+  .container-produto {
+    margin: 0;
+    padding: 0 28px;
   }
 
+  .produto {
+    grid-area: produto;
+  }
   .lista_produtos {
-    display: block;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    flex-wrap:nowrap;
+    /*Não consegui reproduzir o exercício, quando usei o
+    display GRID os produtos ficaram todos "esmagados"
+    um sobre o outro, e usando FLEX não consegui alinhar
+     da forma desejada*/
   }
 
   .produto h3,
@@ -166,32 +169,23 @@ button {
 }
 
 @media screen and (max-width: 640px) {
-
   .global_container {
-  
-    display:block;
-    }
+    display: block;
+  }
 
-    .container {
-      width: 90%;
-      display: flex;
-      flex-direction: column;
-    }
+  .container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .container-about img {
-      width: 90%;
-      align-self:center; 
-      /*1-Como faço para que a foto ocupe-
-       todo o espaço do container?
-       2- O conteudo desse container e do header -
-       Vazam para fora em displays menores (558px)
-       Como evitar esse comportamento?*/
+  .container-about img {
+    width: 90%;
+    align-self: center;
+  }
 
-    }
-
-    button {
-      width: 100%;
-      margin-top: 5px;
-    }
-
+  button {
+    width: 100%;
+    margin-top: 5px;
+  }
 }
