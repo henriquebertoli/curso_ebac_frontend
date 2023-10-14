@@ -101,7 +101,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
-  
+
     grid-template-areas:
       'header produto'
       'sobre produto';
@@ -139,18 +139,22 @@ button {
     padding: 0 28px;
   }
 
-  .produto {
+  .produtos {
     grid-area: produto;
   }
   .lista_produtos {
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    flex-wrap:nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2%;
+    row-gap: 5%;
     /*Não consegui reproduzir o exercício, quando usei o
     display GRID os produtos ficaram todos "esmagados"
     um sobre o outro, e usando FLEX não consegui alinhar
      da forma desejada*/
+  }
+
+  .produto {
+    width: auto;
   }
 
   .produto h3,
@@ -161,7 +165,7 @@ button {
 
   button {
     margin: auto;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
     display: block;
     color: black;
     box-shadow: 3px 3px 3px inset white;
@@ -174,7 +178,7 @@ button {
   }
 
   .container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
   }
@@ -184,8 +188,24 @@ button {
     align-self: center;
   }
 
+  .lista_produtos {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2%;
+    row-gap: 5%;
+  }
+
+  .produto {
+    width: auto;
+  }
+
+  .produto img {
+    margin-top: 4px;
+  }
+
   button {
     width: 100%;
     margin-top: 5px;
+    margin-bottom: 0;
   }
 }
