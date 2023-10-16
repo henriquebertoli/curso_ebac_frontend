@@ -12,23 +12,25 @@
     <link rel="stylesheet" href="main.css" />
     <title>Loja CSS responsivo</title>
   </head>
-  <body class="global_container">
+  <body>
+    <!--Removido a classe global_container-->
+    <header>
+      <div class="container">
+        <h1>EBAC Instrumentos</h1>
+        <nav class="navegacao">
+          <ul>
+            <li>
+              <a href="#about">Sobre a loja</a>
+            </li>
+            <li>
+              <a href="#products">Produtos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Removi o elemento <header> para fora da Tag <main>-->
     <main>
-      <header>
-        <div class="container">
-          <h1>EBAC Instrumentos</h1>
-          <nav class="navegacao">
-            <ul>
-              <li>
-                <a href="#about">Sobre a loja</a>
-              </li>
-              <li>
-                <a href="#products">Produtos</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </header>
       <section class="sobre" id="sobre">
         <div class="container-about">
           <img src="./images/loja.jpg" alt="loja de intrumenstos musicais" />

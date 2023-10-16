@@ -97,7 +97,8 @@ button {
 }
 
 @media (max-width: 1023px) {
-  .global_container {
+  /*Removido as referencias - 
+   .global_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
@@ -105,7 +106,7 @@ button {
     grid-template-areas:
       'header produto'
       'sobre produto';
-  }
+  }*/
 
   h2 {
     margin-top: 16px;
@@ -147,10 +148,9 @@ button {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2%;
     row-gap: 5%;
-    /*Não consegui reproduzir o exercício, quando usei o
-    display GRID os produtos ficaram todos "esmagados"
-    um sobre o outro, e usando FLEX não consegui alinhar
-     da forma desejada*/
+    /*Dessa forma o grid vai se repetir 2 items por linha,
+    e terá a qtde de linhas q for necessário 
+    ex: 10 itens , 2 colunas, 5 linhas*/
   }
 
   .produto {
@@ -173,9 +173,9 @@ button {
 }
 
 @media screen and (max-width: 640px) {
-  .global_container {
+  /* Removido as referencias - .global_container {
     display: block;
-  }
+  }*/
 
   .container {
     width: 100%;
@@ -193,6 +193,9 @@ button {
     grid-template-columns: 1fr;
     column-gap: 2%;
     row-gap: 5%;
+    /*Dessa forma o grid vai se repetir 1 items por linha,
+    e terá a qtde de linhas q for necessário 
+    ex: 10 itens , 1 colunas, 10 linhas*/
   }
 
   .produto {
