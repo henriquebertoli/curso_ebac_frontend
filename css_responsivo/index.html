@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Loja CSS responsivo</title>
+  </head>
+  <body>
+    <!--Removido a classe global_container-->
+    <header>
+      <div class="container">
+        <h1>EBAC Instrumentos</h1>
+        <nav class="navegacao">
+          <ul>
+            <li>
+              <a href="#about">Sobre a loja</a>
+            </li>
+            <li>
+              <a href="#products">Produtos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Removi o elemento <header> para fora da Tag <main>-->
+    <main>
+      <section class="sobre" id="sobre">
+        <div class="container-about">
+          <img src="./images/loja.jpg" alt="loja de intrumenstos musicais" />
+          <div class="conteudo">
+            <h2>Sobre a loja</h2>
+            <p>
+              Lorem ipsum dolor ararararararsit amet consectetur adipisicing
+              elit. Cupiditate laborum, eaque eum ratione possimus corrupti
+              molestias praesentium quis, ipsa modi soluta illum esse earum
+              debitis culpa explicabo! Quasi incidunt, illum quibusdam aliquid
+              nam fuga! Quod, deleniti! A ab ad et quidem molestiae impedit
+              natus assumenda ea distinctio in, mollitia aostrum!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Só consegui alinhar HEADER e SOBRE A LOJA a direita,
+    quando deixei a section PRODUTO fora da MAIN TAG, não sei se isso é uma boa prática de programação-->
+    <section class="produtos" id="produto">
+      <div class="container-produto container">
+        <h2>Produtos</h2>
+        <div class="lista_produtos">
+          <article class="produto">
+            <img src="./images/bateria.jpg" alt="instrumento bateria" />
+            <h3>Conjunto bateria musical</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              aliquid!
+            </p>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+          <article class="produto">
+            <img src="./images/guitarra.jpg" alt="guitarra eletrica" />
+            <h3>Guitarra Gibson</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              aliquid!
+            </p>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+          <article class="produto">
+            <img src="./images/teclado.jpg" alt="instrumento teclado" />
+            <h3>Teclado Yamaha</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              aliquid!
+            </p>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+          <article class="produto">
+            <img src="./images/violao.jpg" alt="violao acustico" />
+            <h3>Violão</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque,
+              aliquid!
+            </p>
+            <button type="button">Adicionar ao carrinho</button>
+          </article>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
