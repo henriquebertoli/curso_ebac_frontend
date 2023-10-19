@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <style>
+      table {
+        max-width: 500px;
+      }
+      .container {
+        margin-top: 36px;
+      }
+
+      body {
+        padding: 50px;
+      }
+
+      #preco p {
+        width: 300px;
+      }
+
+
+      </style>
+  </head>
+  <body>
+    <!-- AULA 2 GRIDS USANDO BOOTSTRAP-->
+
+    <div class="container">
+      <h2>Exemplo de Grid Bootstrap</h2>
+      <div class="row">
+        <div class="col">
+          <img src="https://via.placeholder.com/180x180" alt="" />
+          <h3>Produto</h3>
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/180x180" alt="" />
+          <h3>Produto</h3>
+        </div>
+        <div class="col">
+          <img src="https://via.placeholder.com/180x180" alt="" />
+          <h3>Produto</h3>
+        </div>
+      </div>
+    </div>
+    
+    <br /><br /><br /><br />
+    
+    <!--AULA 03 FONTES E TIPOGRAFIA NO BOOTSTRAP-->
+
+    <h1>Teste</h1>
+    <p class="display-3"> <!-- Mais uma classe Bootstrap para estilizar textos-->
+   <mark>Texto em destaque</mark> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio voluptates perferendis tempore nemo labore quos.
+  </p>
+
+    <br /><br /><br /><br />
+
+    <!--AULA 04 TABELAS USANDO BOOTSTRAP-->
+
+<table class="table table-dark"> <!-- Essas classes Bootstrap estilizam a tabela-->
+  <!--Tag <caption> adiciona leganda na tabela nesse caso "tabela de produtos"-->
+  <caption>Tabela de produtos</caption>
+<!--Tag <thead> adiciona o cabeçalho na tabela-->
+  <thead>
+    <th>Nome do produto</th>
+    <th>Preço original</th>
+    <th>Preço atual</th>
+    <th>Desconto</th>
+    <!--Tag <tbody> adicionao o corpo da tabela (registros)-->
+    <tbody>
+      <!--Tag <tr> define a linha de uma tabela-->
+      <tr>
+      <!--Tag <td> define a célula de dados da tabela-->
+        <td>iPhone 13</td>
+        <td>R$ 7.000,00</td>
+        <td>R$ 5.000,00</td>
+        <td>R$ 2.000,00</td>
+      </tr>
+      <tr>
+        <!--Tag <td> define a célula de dados da tabela-->
+          <td>iPhone 13</td>
+          <td>R$ 7.000,00</td>
+          <td>R$ 5.000,00</td>
+          <td>R$ 2.000,00</td>
+        </tr>
+        <tr>
+          <!--Tag <td> define a célula de dados da tabela-->
+            <td>iPhone 13</td>
+            <td>R$ 7.000,00</td>
+            <td>R$ 5.000,00</td>
+            <td>R$ 2.000,00</td>
+          </tr>
+    </tbody>
+  </thead>
+</table>
+
+<br><br>
+
+    <table class="table table-light">
+      <caption>
+        Tabela de produtos
+      </caption>
+      <thead>
+        <th>Nome do produto</th>
+        <th>Preço original</th>
+        <th>Preço atual</th>
+        <th>Desconto</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>iphone 13</td>
+          <td>R$ 7.000,00</td>
+          <td>R$ 5.000,00</td>
+          <td>R$ 2.000,00</td>
+        </tr>
+        <tr>
+          <td>iphone 13</td>
+          <td>R$ 7.000,00</td>
+          <td>R$ 5.000,00</td>
+          <td>R$ 2.000,00</td>
+        </tr>
+        <tr>
+          <td>iphone 13</td>
+          <td>R$ 7.000,00</td>
+          <td>R$ 5.000,00</td>
+          <td>R$ 2.000,00</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <h2>Destaque</h2>
+        </div>
+        <div class="col-4">
+          <h2>Barra lateral</h2>
+        </div>
+        <div class="col">Coluna #3</div>
+        <div class="col">Coluna #4</div>
+        <div class="col">Coluna #5</div>
+      </div>
+    </div>
+    <!-- AULA 05 BOTÕES-BOOTSTRAP-->
+
+<br><br><br><br><br>
+<!--
+    <button class="btn btn-outline-primary">Clique aqui</button>
+    <button class="btn btn-success btn-lg">Clique aqui</button>
+    <button class="btn btn-danger btn-sm">Clique aqui</button>
+    <button class="btn btn-warning btn-md">Clique aqui</button>
+    <button class="btn btn-info">Clique aqui</button>
+    <button class="btn btn-light">Clique aqui</button>
+    <button class="btn btn-dark">Clique aqui</button>
+    <button class="btn btn-link">Clique aqui</button> -->
+
+    <br><br><br><br><br>
+
+    <!--AULA 06 ACCORDIONS bootstrap-->
+<!--
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta1">
+            Pergunta
+          </button>
+        </div>
+        <div id="resposta1" class="accordion-collapse collapse show">
+          <div class="accordion-body">
+            Resposta da pergunta
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#resposta2">
+            Pergunta 2
+          </button>
+        </div>
+        <div id="resposta2" class="accordion-collapse collapse ">
+          <div class="accordion-body">
+            Resposta da pergunta 2
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+    <!--AULA 07 COLAPSE - BOOTSTRAP-->
+<button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#preco">
+  Ver preço
+</button>
+<div class="collapse " id="preco">
+  <p>
+    3 x de R$ 300,00
+  </p>
+</div>
+
+<br><br><br><br>
+
+<!-- AULA 08 ALERTAS - BOOTSTRAP-->
+
+<div class="alert alert-primary alert-dismissible">
+  <button class="btn-close" data-bs-dismiss="alert" ></button>
+  Sou uma mensagem de info
+</div>
+<div class="alert alert-secondary">
+  Sou uma mensagem de info
+</div>
+<div class="alert alert-info">
+  Sou uma mensagem de info
+</div>
+<div class="alert alert-danger ">
+  Sou uma mensagem de info
+</div>
+<div class="alert alert-warning ">
+  Sou uma mensagem de info
+</div>
+<div class="alert alert-dark ">
+  Sou uma mensagem de info
+</div>
+
+
+<br><br><br><br>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
