@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: red;
+  color: #fdc800ff;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #ff0000;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+h6 {
+  color: #fdc800ff;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 100px;
+  margin-bottom: 24px;
+  font-weight: bolder;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.row {
+  margin-top: 32px;
+  row-gap: 32px;
+}
+
+.card-body,
+.card-header {
+  background-color: #fdc800ff;
+  color: #ff0000;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.card-text {
+  font-weight: lighter;
+}
+
+.nav-link {
+  background-color: #fdc800ff;
+  color: #ff0000;
+  margin-right: 3px;
+}
+
+.btn {
+  background-color: #ff0000;
+  color: #fdc800ff;
+  border-style: none;
+}
+
+section {
+  text-align: center;
+  font-size: large;
+}
+
+@media screen and (max-width: 1023px) {
+  .nav-link {
+    margin: 6px;
+  }
+
+   .row,.col-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nav-link {
+    margin: 6px;
+  }
+
+  .row, .col-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    width: 100%;
+  }
+}

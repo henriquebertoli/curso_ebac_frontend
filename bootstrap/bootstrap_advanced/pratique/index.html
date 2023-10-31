@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Avançado</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="navbar navbar-expand-lg">
+          <div class="container">
+            <h1>Visite China</h1>
+            <button
+              type="button"
+              class="navbar-toggler"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+              <ul class="nav nav-pills navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#quem-somos">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pacotes">Pacotes</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div
+          id="carousel-exemplo"
+          class="carousel carousel-fade slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div data-bs-interval="2000" class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="./images/chinese-flag-1752046_1920.jpg"
+              />
+              <div class="carousel-caption">
+                <h6>Bandeira da China</h6>
+              </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./images/great-wall-of-china-5483516_1280.jpg"
+              />
+              <div class="carousel-caption">
+                <h6>Grande Muralha</h6>
+              </div>
+            </div>
+            <div data-bs-interval="2000" class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="./images/agriculture-1807576_1920.jpg"
+              />
+              <div class="carousel-caption">
+                <h6>Cultivo de arroz</h6>
+              </div>
+            </div>
+          </div>
+          <button
+            data-bs-target="#carousel-exemplo"
+            data-bs-slide="prev"
+            class="carousel-control-prev"
+            type="button"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            data-bs-target="#carousel-exemplo"
+            data-bs-slide="next"
+            class="carousel-control-next"
+            type="button"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              class="active"
+              type="button"
+              data-bs-target="#carousel-exemplo"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              class="active"
+              data-bs-slide-to="1"
+              data-bs-target="#carousel-exemplo"
+              type="button"
+            ></button>
+            <button
+              class="active"
+              data-bs-slide-to="2"
+              data-bs-target="#carousel-exemplo"
+              type="button"
+            ></button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <section id="quem-somos">
+          <h2>Quem somos</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem esse obcaecati totam odio vero vitae ea accusamus
+            pariatur soluta aut. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Qui repellat sunt nostrum cum nam? Aliquid dolorem
+            sapiente, amet laboriosam enim qui totam. Dolorem facilis rerum
+            accusantium omnis assumenda, perspiciatis corrupti! Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Tempore pariatur
+            perspiciatis, molestiae laboriosam adipisci beatae, similique nam
+            natus libero nihil sint sequi ratione accusantium eveniet, illum
+            veniam. Velit, harum et? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Laborum voluptatum delectus ab, deleniti pariatur
+            autem nisi, porro facilis, sunt quibusdam ratione accusantium soluta
+            optio similique distinctio vitae placeat odio ducimus!
+          </p>
+        </section>
+        <section id="pacotes">
+          <h2>Pacotes</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="card">
+                  <header class="card-header">
+                    <h4>Visite China</h4>
+                  </header>
+                  <img
+                    src="./images/carnival-4782222_640.jpg"
+                    alt="leão chinês"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Festival</h4>
+                    <h5 class="card-subtitle">Conheça essa cultura milenar</h5>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, obcaecati? Dolor libero repellendus
+                      consectetur quo.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <header class="card-header"><h4>Visite China</h4></header>
+                  <img
+                    src="./images/chinese-food-5233516_640.jpg"
+                    alt="comida chinesa"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Gastronomia</h4>
+                    <h5 class="card-subtitle">Conheça essa cultura milenar</h5>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, obcaecati? Dolor libero repellendus
+                      consectetur quo.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <header class="card-header"><h4>Visite China</h4></header>
+                  <img
+                    src="./images/city-6156596_1920.jpg"
+                    alt="cidade chinesa"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Shanghai</h4>
+                    <h5 class="card-subtitle">Conheça essa cultura milenar</h5>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, obcaecati? Dolor libero repellendus
+                      consectetur quo.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <header class="card-header"><h4>Visite China</h4></header>
+                  <img
+                    src="./images/great-wall-of-china-2030311_640.jpg"
+                    alt="grande muralha da China"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">A Grande Muralha</h4>
+                    <h5 class="card-subtitle">Conheça essa cultura milenar</h5>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, obcaecati? Dolor libero repellendus
+                      consectetur quo.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <header class="card-header"><h4>Visite China</h4></header>
+                  <img
+                    src="./images/hong-kong-1174744_640.jpg"
+                    alt="provincia Hong Kong"
+                  />
+                  <div class="card-body">
+                    <h4 class="card-title">Hong Kong</h4>
+                    <h5 class="card-subtitle">Conheça essa cultura milenar</h5>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, obcaecati? Dolor libero repellendus
+                      consectetur quo.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="card">
+                  <header class="card-header"><h4>Visite China</h4></header>
+                  <img src="./images/pagoda-594585_640.jpg" alt="pagoda" />
+                  <div class="card-body">
+                    <h4 class="card-title">Pagoda</h4>
+                    <h5 class="card-subtitle">Conheça essa cultura milenar</h5>
+                    <p class="card-text">
+                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                      Dignissimos, obcaecati? Dolor libero repellendus
+                      consectetur quo.
+                    </p>
+                    <a href="#" class="btn btn-primary">Saiba mais...</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
