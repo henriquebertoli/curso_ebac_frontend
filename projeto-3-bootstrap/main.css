@@ -1,0 +1,65 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+  background-color: #2aa4fc;
+}
+
+#cabecalho .nav .nav-link.active {
+  background-color: #fff;
+  color: #73c2fb;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover .nav-link.active:hover {
+  color: #fff;
+}
+
+.navbar-toggler {
+  background-color: #b1dcfa;
+}
+
+.section-title {
+  font-family: 'Oranienbaum', serif;
+}
+
+#quem-somos,
+#mochilao {
+  background-color: #b1dcfa;
+}
+
+.text-colored {
+  color: #2aa4fc;
+}
+
+.nav-mochilao .nav-link.active,
+#fale-conosco button {
+  background-color: #2aa4fc;
+  color: #fff;
+}
+
+.nav-mochilao .nav-link:hover {
+  color: #fff;
+}
+
+.social-links li {
+  list-style: none;
+  display: inline;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+#mensagem {
+  resize: none;
+  height: 120px;
+}
+
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 280px;
+  }
+}

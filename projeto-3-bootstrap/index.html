@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viajando o mundo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+      <div class="container">
+        <h1 class="navbar-brand m-0 section-title fw-bold">
+          <i class="bi bi-compass-fill"></i>
+          EBAC Travel</h1>
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-navegacao"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav
+          class="navbar-collapse collapse justify-content-end"
+          id="menu-navegacao"
+        >
+          <ul class="nav nav-pills d-block d-md-flex">
+            <li class="nav-item fw-bold">
+              <a href="#quem-somos" class="nav-link">
+                <i class="bi bi-building-fill me-1"></i>Quem somos</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#aventura" class="nav-link">
+                <i class="bi bi-trophy-fill me-1"></i>Aventura</a>
+              </li>
+            <li class="nav-item fw-bold">
+              <a href="#mochilao" class="nav-link">
+                <i class="bi bi-backpack2-fill me-1"></i>Mochilão</a>
+            </li>
+            <li class="nav-item fw-bold">
+              <a href="#fale-conosco" class="nav-link">
+                <i class="bi bi-chat-right-text-fill me-1"></i>
+                Fale conosco</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+      <section id="quem-somos">
+        <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="./images/eiffel-tower.jpg" alt="Torre Eiffel" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./images/caucasus.jpg" alt="Caucasus" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./images/maldivas.jpg" alt="Praia nas Maldivas" />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./images/islandia.jpg" alt="Cachoeira na Islândia" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              class="active"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="3"
+            ></button>
+          </div>
+        </div>
+        <div class="pt-5 pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-5">
+                <img
+                  src="./images/mapa-mundi.jpg"
+                  class="d-block w-100 rounded-4"
+                  alt="Mapa mundi"
+                />
+              </div>
+              <div class="col-md-7 mt-3 mt-md-0">
+                <h2 class="section-title">
+                  Quem <span class="text-colored">somos</span>
+                </h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates repellendus minima ea ipsa voluptatum officiis est
+                  ad quo hic, et autem ipsum quaerat mollitia voluptatibus ut,
+                  perspiciatis, natus esse porro.
+                </p>
+
+                <h3 class="section-title">
+                  Nossa <span class="text-colored">missão</span>
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Mollitia voluptas vel minus? Nemo accusamus enim, repudiandae
+                  provident recusandae ducimus reprehenderit eos unde eveniet
+                  vero dicta veniam, necessitatibus cumque perferendis libero!
+                </p>
+                <ul>
+                  <li>Item 1</li>
+                  <li>Item 2</li>
+                  <li>Item 3</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="pt-5 pb-5" id="aventura">
+        <div class="container">
+          <div class="row mt-4">
+            <h2 class="section-title text-center">
+              <span class="text-colored">Aventura</span>
+            </h2>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="./images/hiking.jpg"
+                alt="Pessoa praticando hiking"
+                class="d-block w-100 rounded-4 mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-signpost-fill"></i>
+                Hiking
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                laudantium in fugiat repellendus, reiciendis, ullam obcaecati
+                suscipit ducimus quam, doloremque voluptatibus impedit porro
+                nemo maxime distinctio dicta numquam a sint.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="./images/rafting.jpg"
+                alt="Pessoa praticando rafting"
+                class="d-block w-100 rounded-4 mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-water"></i>
+                Rafting
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                laudantium in fugiat repellendus, reiciendis, ullam obcaecati
+                suscipit ducimus quam, doloremque voluptatibus impedit porro
+                nemo maxime distinctio dicta numquam a sint.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <img
+                src="./images/snow-mountain-bike.jpg"
+                alt="Pessoas praticando mountain bike na neve"
+                class="d-block w-100 rounded-4 mb-2"
+              />
+              <h3 class="section-title text-colored fs-4">
+                <i class="bi bi-bicycle"></i>
+                Mountain bike na neve
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+                laudantium in fugiat repellendus, reiciendis, ullam obcaecati
+                suscipit ducimus quam, doloremque voluptatibus impedit porro
+                nemo maxime distinctio dicta numquam a sint.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="mochilao" class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <h2 class="section-title text-colored text-center mb-5">Mochilão</h2>
+          </div>
+          <div class="row">
+            <aside class="col-md-2">
+              <nav class="nav nav-pills flex-column nav-mochilao">
+                <button
+                  type="button" data-bs-toggle="tab" data-bs-target="#america-do-sul"
+                  class="nav-link active fw-bold text-start text-colored"
+                >
+                  América do Sul
+                </button>
+                <button
+                  type="button" data-bs-toggle="tab" data-bs-target="#america-do-norte"
+                  class="nav-link fw-bold text-start text-colored"
+                >
+                  América do Norte / Central
+                </button>
+                <button
+                  type="button" data-bs-toggle="tab" data-bs-target="#europa"
+                  class="nav-link fw-bold text-start text-colored"
+                >
+                  Europa
+                </button>
+                <button
+                  type="button" data-bs-toggle="tab" data-bs-target="#africa"
+                  class="nav-link fw-bold text-start text-colored"
+                >
+                  África
+                </button>
+                <button
+                  type="button" data-bs-toggle="tab" data-bs-target="#asia"
+                  class="nav-link fw-bold text-start text-colored"
+                >
+                  Ásia
+                </button>
+                <button
+                  type="button" data-bs-toggle="tab" data-bs-target="#oceania"
+                  class="nav-link fw-bold text-start text-colored"
+                >
+                  Oceania
+                </button>
+              </nav>
+            </aside>
+            <div class="col-md-10">
+              <div class="tab-content">
+                <div class="tab-pane active" id="america-do-sul">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="./images/peru-2774925_640.jpg"
+                        alt="machu picchu"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Peru - Machu Picchu
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vel, debitis?
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="./images/peru-4416038_640.jpg"
+                        alt="vulcão Licancabur"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Bolívia - vulcão Licancabur
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vel, debitis?
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="./images/peru-2774925_640.jpg"
+                        alt="machu picchu"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Peru - Machu Picchu
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vel, debitis?
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="./images/peru-4416038_640.jpg"
+                        alt="vulcão Licancabur"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Bolívia - vulcão Licancabur
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vel, debitis?
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="./images/peru-2774925_640.jpg"
+                        alt="machu picchu"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Peru - Machu Picchu
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vel, debitis?
+                      </p>
+                    </div>
+                    <div class="col-md-3">
+                      <img
+                        class="d-block w-100"
+                        src="./images/peru-4416038_640.jpg"
+                        alt="vulcão Licancabur"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                        Bolívia - vulcão Licancabur
+                      </h5>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Vel, debitis?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                  <div class="tab-pane" id="america-do-norte">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img
+                        class="d-block w-100"
+                        src="./images/monument-valley-5499156_1280.jpg"
+                        alt="Monument Valley"
+                        />
+                        <h5 class="text-colored fw-bold mt-2">
+                          E.U.A - Monument Valley
+                        </h5>
+                      <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                      </p>
+                      </div>
+                  <div class="col-md-3">
+                    <img
+                    src="./images/mountains-4319675_640.jpg"
+                    class="d-block w-100"
+                      alt="National Park Yellowstone"
+                    />
+                    <h5 class="text-colored fw-bold mt-2">
+                      E.U.A - Parque Nacional Yellowstone
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      class="d-block w-100"
+                      src="./images/tikal-889762_640.jpg"
+                      alt="Piramide Tikal"
+                    />
+                    <h5 class="text-colored fw-bold mt-2">
+                      Guatemala - Tikal
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                    class="d-block w-100"
+                    src="images/tulum-2656540_640.jpg"
+                    alt="Tulum Mexico"
+                    />
+                    <h5 class="text-colored fw-bold mt-2">
+                      México - Tulum
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                    </p>
+                  </div>
+                </div>
+              </div>
+                <div class="tab-pane" id="europa">
+                  <div class="row">
+                    <div class="col-md-3">
+                    <img
+                      class="d-block w-100"
+                      src="./images/prague-1845560_640.jpg"
+                      alt="cidade de Praga"
+                    />
+                    <h5 class="text-colored fw-bold mt-2">
+                      República Tcheca - Praga
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      class="d-block w-100"
+                      src="./images/buildings-6778915_640.jpg"
+                      alt="Cidade Amsterdãm"
+                    />
+                    <h5 class="text-colored fw-bold mt-2">
+                      Países Baixos - Cidade Amsterdãm
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      class="d-block w-100"
+                      src="./images/lake-1681485_640.jpg"
+                      alt="lago na Suíça"
+                    />
+                    <h5 class="text-colored fw-bold mt-2">
+                    Suíça - Alpes Suíços
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                    </p>
+                  </div>
+                  <div class="col-md-3">
+                    <img
+                      class="d-block w-100"
+                      src="images/town-8310950_640.jpg"
+                      alt="cidade de Santorini"
+                    />
+                    <h5 class="text-colored fw-bold mt-2">
+                      Grécia - Santorini
+                    </h5>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                    </p>
+                  </div>
+                </div>
+              </div>
+                <div class="tab-pane" id="africa">
+                  <div class="row">
+                    <div class="col-md-3">
+                      <img
+                      class="d-block w-100"
+                      src="./images/zebra-1170177_640.jpg"
+                      alt="animais africanos na savana"
+                      />
+                      <h5 class="text-colored fw-bold mt-2">
+                      África do Sul - Parque Nacional Krueger
+                      </h5>
+                      <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Vel, debitis?
+                      </p>
+                    </div>
+              <div class="col-md-3">
+                <img
+                class="d-block w-100"
+                  src="./images/victoria-falls-5903496_640.jpg"
+                  alt="Cachoeira Victoria Falls"
+                />
+                <h5 class="text-colored fw-bold mt-2">
+                  Kenia - Victoria Falls
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vel, debitis?
+                </p>
+              </div>
+              <div class="col-md-3">
+                <img
+                  class="d-block w-100"
+                  src="./images/tree-64311_640.jpg"
+                  alt="deserto da Namíbia"
+                  />
+                  <h5 class="text-colored fw-bold mt-2">
+                    Namíbia - Deserto da Namíbia
+                  </h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Vel, debitis?
+                  </p>
+                </div>
+                <div class="col-md-3">
+                  <img
+                  class="d-block w-100"
+                  src="./images/africa-4055169_640.jpg"
+                  alt="monte Kilimanjaro"
+                  />
+                <h5 class="text-colored fw-bold mt-2">
+                Tanzânia - monte Kilimanjaro
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vel, debitis?
+                </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="asia">
+              <div class="row">
+                <div class="col-md-3">
+                  <img
+                  class="d-block w-100"
+                  src="./images/japan-217882_640.jpg"
+                  alt="bairro Shibuya"
+              />
+              <h5 class="text-colored fw-bold mt-2">
+                Japão - Tóquio 
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vel, debitis?
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img
+                class="d-block w-100"
+                src="./images/singapore-1896774_640.jpg"
+                alt="foto noturna de Singapura"
+              />
+              <h5 class="text-colored fw-bold mt-2">
+                Singapura - cidade Estado
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vel, debitis?
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img
+              class="d-block w-100"
+              src="./images/taj-mahal-1379273_640.jpg"
+              alt="foto do palácio Taj Mahal"
+              />
+              <h5 class="text-colored fw-bold mt-2">
+                Índia - Taj Mahal
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vel, debitis?
+              </p>
+            </div>
+            <div class="col-md-3">
+              <img
+              class="d-block w-100"
+              src="./images/yurt-486866_640.jpg"
+              alt="Cabana Yurt nas pradarias"
+              />
+              <h5 class="text-colored fw-bold mt-2">
+                Mongólia - Pradarias
+              </h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vel, debitis?
+              </p>
+          </div>
+        </div>
+      </div>
+            <div class="tab-pane" id="oceania">
+              <div class="row">
+                <div class="col-md-3">
+                  <img
+                  class="d-block w-100"
+                  src="./images/valley-90388_640.jpg"
+                  alt="bairro Shibuya"
+                />
+                <h5 class="text-colored fw-bold mt-2">
+                  Nova Zelândia - Montanhas 
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vel, debitis?
+                </p>
+              </div>
+              <div class="col-md-3">
+                <img
+                class="d-block w-100"
+                src="./images/uluru-1076323_640.jpg"
+                alt="foto da rocha Uluru na Áustralia"
+                />
+                <h5 class="text-colored fw-bold mt-2">
+                  Áustralia - Parque Nacional Uluru-Kata Tjuta 
+                </h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Vel, debitis?
+                </p>
+              </div>
+            </div>
+        </div>
+          </section>
+            <section id="fale-conosco" class="pt-5 pb-5">
+              <div class="container">
+              <div class="row">
+                <h2 class="section-title text-center">Fale <span class="text-colored">conosco</span></h2>
+              </div>
+              <div class="row">
+                <div class="col-md-7 mb-5">
+                  <form>
+                    <div class="mb-3">
+                      <label for="nome" class="form-label fw-bold text-colored">Seu nome</label>
+                      <input type="text" id="nome" name="nome" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label for="email" class="form-label fw-bold text-colored">Seu email</label>
+                      <input type="email" id="email" name="email" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional)</label>
+                      <input type="text" id="telefone" name="telefone" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                      <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem</label>
+                      <textarea id="mensagem" name="mensagem" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn fw-bold">Enviar</button>
+                  </form>
+                </div>
+                <div class="col-md-5">
+                  <div class="rom">
+                    <h3 class="section-title fs-4 text-colored">
+                      <i class="bi bi-hand-thumbs-up-fill"></i>
+                      Redes sociais
+                    </h3>
+                    <ul class="social-links">
+                      <li class="fs-5">
+                        <a href="#">
+                        <i class="bi bi-facebook text-colored"></i>
+                        </a>
+                      </li>
+                      <li class="fs-5 ms-1 me-1">
+                        <a href="#">
+                        <i class="bi bi-instagram text-colored"></i>
+                        </a>
+                      </li>
+                      <li class="fs-5">
+                        <a href="#">
+                        <i class="bi bi-whatsapp text-colored"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="row">
+                    <h3 class="section-title fs-4 text-colored mt-4">
+                      <i class="bi bi-cursor-fill"></i>
+                      Endereço
+                    </h3>
+                    <p>Rua dos Viajantes Nº 001, Bairro Próxima Aventura - São Paulo - S.P. </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <script src="./js/jquery-3.7.1.min.js"></script>
+          <script src="./js/jquery.validate.js"></script>
+          <script src="./js/jquery.mask.min.js"></script>
+          <script src="./js/messages_pt_BR.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+            <script>
+            $(document).ready(function () {
+              
+              $('#telefone').mask('(00)00000-0000');
+
+              $('form').validate({
+                rules: {
+                  nome: {
+                    required: true,
+                },
+                  email: {
+                    required: true,
+                  },
+                },
+              });
+            });  
+              
+              
+              
+              
+              /*$(document).ready(function(){
+
+                $('#telefone').mask('(00)00000-0000');
+
+                $('#cadastro').validate ({
+                  rules: {
+                    nome: {
+                      required: true,
+                    },
+                      email: {
+                        required: true,
+                        email:true,
+                    },
+                  },
+                });
+              });
+*/
+            </script>
+  </body>
+</html>
