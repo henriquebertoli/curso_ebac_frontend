@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Coffee Shop Website</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Newsreader:opsz@6..72&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Meu Coffee Shop</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="#about">Quem somos</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- AQUI COMECA O CONTEUDO -->
+
+    <section id="about">
+      <div class="container">
+        <img
+          class="store-inside"
+          src="./imagens/coffee_shop.jpg"
+          alt="imagem do interior do Coffee Shop"
+        />
+        <div>
+          <h2>Quem somos</h2>
+          <p>
+            Um grupo apaixonado pelo mundo do café. Temos profundo respeito por
+            todos os profissionais envolvidos, nesta importante cadeia
+            produtiva. O café é um dos impulsionadores de nossa economia e está
+            em constante expansão. Ter fé no café! Isso nos move, isso nos
+            motiva e quando damos nossas mãos tudo se transforma.
+          </p>
+          <p>
+            Desde que abrimos nossa loja em 2008, lutamos por um futuro
+            sustentável para o nosso planeta. Escolhemos parceiros que
+            compartilham nossa visão e valores. Por trás de cada grão de café
+            existe uma história de amor, dedicação e consciência com o meio
+            ambiente e o bem-estar das pessoas.
+          </p>
+          <ul class="coffee-imgs">
+            <li>
+              <img
+                src="./imagens/coffee3.jpg"
+                alt="maos segurando cafe recem colhido"
+              />
+            </li>
+            <li>
+              <img src="./imagens/coffee1.jpg" alt="saco com cafe torrado" />
+            </li>
+            <li>
+              <img src="./imagens/coffee2.jpg" alt="maos de um barista" />
+            </li>
+            <li><img src="./imagens/coffee4.jpg" alt="xicara de cafe" /></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- AQUI COMECA A SECAO DE CONTATO-->
+
+    <section id="contact">
+      <div class="container">
+        <h2>Contato</h2>
+        <div class="contact-methods">
+          <div>
+            <h3>Fale conosco</h3>
+            <form>
+              <input type="text" placeholder="Seu nome" required />
+              <input type="email" placeholder="Seu e-mail" required />
+              <input type="tel" placeholder="Seu telefone (opcional)" />
+              <textarea placeholder="Sua mensagem" required></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+          <div>
+            <h3>Nos acompanhe</h3>
+            <ul class="social-links">
+              <li>
+                <a href="#" title="Siga-nos no Instagram">
+                  <img src="./imagens/instagram.png" alt="Logo do Instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Siga-nos no Facebook">
+                  <img src="./imagens/facebook.png" alt="Logo do Facebook " />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Visite nosso canal no Youtube">
+                  <img src="./imagens/youtube.png" alt="Logo do Youtube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3>Venha nos conhecer</h3>
+            <p>Rua do Cafe n 123, Vila Fazendinha - Cafenopolis SP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; Coffee Shop - Todos os direitos reservados - 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>
